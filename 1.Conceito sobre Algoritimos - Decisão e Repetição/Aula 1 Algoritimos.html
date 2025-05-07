@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<!-- Aqui começa a inclusão do código JavaScript. -->
+	<script type="text/javascript">
+		
+		// Declaração das variáveis para armazenar o valor das notas
+		// Aqui foi utilizado um conversor de tipo de dados parseFloat()
+		// A instrução prompt() recupera um valor digitado, mas, o seu resultado é
+		// sempre um texto e, por isso, é necessário converter o valor texto em numérico.
+		// O Float significa que o número pode ter casas decimais!
+		var nota1 = parseFloat(prompt("Digite a Nota 1"));
+		var nota2 = parseFloat(prompt("Digite a Nota 2"));
+		var nota3 = parseFloat(prompt("Digite a Nota 3"));
+		var nota4 = parseFloat(prompt("Digite a Nota 4"));
+ 
+		// Declaração de uma variável para realizar a soma e armazenar o valor do resultado
+		var soma = (nota1 + nota2 + nota3 + nota4);
+ 
+		// Decalaração de uma variável para armazenar o resultado da operação: soma / 4
+		var resultado = (soma / 4);
+ 
+		// A instrução abaixo imprime o valor obtido no cálculo na tela do navegador
+		// Perceba que foi inserdio um texto, entre aspas, e utilizado o sinal de + (adição)
+		// para "concatenar", ou seja, juntar um texto com um resultado numérico
+		// Para melhorar a visualização, as notas digitadas (entradas) e são mostradas
+		// Foi utilizada a tag "br" para gerar uma quebra de linha
+		document.write("Nota 1: " + nota1 + "<br>");
+		document.write("Nota 2: " + nota2 + "<br>");
+		document.write("Nota 3: " + nota3 + "<br>");
+		document.write("Nota 4: " + nota4 + "<br>");
+		document.write("Soma das notas: " + soma + "<br>");
+		document.write("Média: " + resultado);
+ 
+	</script>
+	<!-- Fim do bloco do JavaScript -->
+ 
+</body>
+</html>
